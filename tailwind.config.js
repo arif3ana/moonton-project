@@ -23,8 +23,8 @@ module.exports = {
             screens: {
                 'laptopLg': '1160px',
                 'laptopXl': '1360px',
-            }
-        }
+            },
+        },
     },
 
     plugins: [require('@tailwindcss/forms')],
