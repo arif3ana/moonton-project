@@ -1,14 +1,21 @@
-export default function SecondaryButton({ type = 'button', className = '', disabled, children, ...props }) {
+import PropTypes from "prop-types";
+
+SecondaryButton.propTypes = {
+    type: PropTypes.oneOf(['submit', 'button', 'reset']),
+    className: PropTypes.string,
+    variant: PropTypes.oneOf(["primary", "danger", "warning", "light-outline", "white-outline"]),
+    processing: PropTypes.bool,
+    children: PropTypes.node
+}
+
+export default function SecondaryButton({ type = 'submit', className = '', processing, children, variant="primary", ...props }) {
     return (
         <button
             {...props}
             type={type}
-            className={
-                `inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md font-semibold text-xs text-gray-700 uppercase tracking-widest shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-25 transition ease-in-out duration-150 ${
-                    disabled && 'opacity-25'
-                } ` + className
+            className={`rounded-2xl bg-alerange py-[13px] text-center w-full ${processing && "opacity-30"} btn-${variant} ${className}`
             }
-            disabled={disabled}
+            disabled={processing}
         >
             {children}
         </button>
