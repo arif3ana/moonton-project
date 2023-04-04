@@ -1,4 +1,4 @@
-import InputError from "@/Components/InputError";
+import TextInput from "@/Components/TextInput";
 import InputLabel from "@/Components/InputLabel";
 import SecondaryButton from "@/Components/SecondaryButton";
 import { Link, Head } from "@inertiajs/react";
@@ -30,7 +30,7 @@ export default function Login() {
                             forInput="email"
                             value="Email Addres"
                             />
-                                <InputError 
+                                <TextInput 
                                 type="email" 
                                 name="email"
                                 className="focus:outline-alerange focus:outline-none"
@@ -42,7 +42,7 @@ export default function Login() {
                             forInput="password" 
                             value="Password"
                             />
-                                <InputError 
+                                <TextInput 
                                 type="password" 
                                 name="password"
                                 className="focus:outline-alerange focus:outline-none"
