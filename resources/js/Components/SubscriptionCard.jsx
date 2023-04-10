@@ -1,7 +1,11 @@
 import SecondaryButton from "./SecondaryButton";
+import { Head } from "@inertiajs/react";
 export default function SubscriptionCard({id, name, price, durationInMonth, features,isPremium, onSelectSubscription}) {
     return (
         <>
+        <Head>
+            <title>Subscription</title>
+        </Head>
         {/* <!-- Basic --> */}
         {!isPremium && (
 
@@ -20,7 +24,7 @@ export default function SubscriptionCard({id, name, price, durationInMonth, feat
             {
                 features.map((feature, index) => (
                     <div className="flex items-center gap-2" key={`${index}-${id}-${features}`}>
-                        <img src="assets/icons/ic_tick.svg" alt="" />
+                        <img src="/icons/ic_tick.svg" alt="" />
                         <span className="text-sm">
                             {feature}
                         </span>
