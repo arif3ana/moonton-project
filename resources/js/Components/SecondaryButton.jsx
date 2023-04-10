@@ -13,7 +13,7 @@ export default function SecondaryButton({ type = 'submit', className = '', proce
         <button
             {...props}
             type={type}
-            className={`rounded-2xl bg-alerange py-[13px] text-center w-full ${processing && "opacity-30"} btn-${variant} ${className}`
+            className={`rounded-2xl py-[13px] text-center w-full ${processing && "opacity-30"} btn-${variant} ${className}`
             }
             disabled={processing}
         >

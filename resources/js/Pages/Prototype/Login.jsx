@@ -33,7 +33,6 @@ export default function Login() {
                                 <TextInput 
                                 type="email" 
                                 name="email"
-                                className="focus:outline-alerange focus:outline-none"
                                 placeholder="Email Address" 
                                 />
                         </div>
@@ -45,7 +44,6 @@ export default function Login() {
                                 <TextInput 
                                 type="password" 
                                 name="password"
-                                className="focus:outline-alerange focus:outline-none"
                                 placeholder="Password" 
                                 />
                         </div>
