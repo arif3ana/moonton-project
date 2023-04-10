@@ -1,5 +1,5 @@
 import InputLabel from "@/Components/InputLabel";
-import InputError from "@/Components/InputError";
+import TextInput from "@/Components/TextInput";
 import SecondaryButton from "@/Components/SecondaryButton";
 import { Link, Head } from "@inertiajs/react";
 
@@ -32,7 +32,7 @@ export default function Register() {
                                 value="Full Name"
                                 />
 
-                                <InputError 
+                                <TextInput 
                                 type="text" name="fullname"
                                 className="focus:outline-alerange focus:outline-none"
                                 placeholder="Your fullname..." defaultValue="Angga React"
@@ -44,7 +44,7 @@ export default function Register() {
                                 value="Email Address"
                                 />
 
-                                <InputError 
+                                <TextInput 
                                 type="email" name="email"
                                 className="focus:outline-alerange focus:outline-none"
                                 placeholder="Your Email Address" defaultValue="anggaforreact@fb.com"
@@ -56,7 +56,7 @@ export default function Register() {
                                 value="Password"
                                 />
 
-                                <InputError
+                                <TextInput
                                 type="password" name="password"
                                 className="focus:outline-alerange focus:outline-none"
                                 placeholder="Your Password" defaultValue="eeeeeeeeeeeeeee"

@@ -3,7 +3,7 @@
 }
 
 .input-primary {
-    @apply focus:bg-bg-form-bg bg-form-bg focus:outline-alerange focus:outline-none;
+    @apply focus:bg-form-bg bg-form-bg focus:outline-alerange focus:outline-none;
 }
 
 .input-primary-outline {
