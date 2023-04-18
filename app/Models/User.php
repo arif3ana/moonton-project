@@ -46,6 +46,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+
     public function getIsActiveAttribute() {
         if( !$this->LastActiveUserSubscription){
             return false;
