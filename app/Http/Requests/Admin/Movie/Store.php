@@ -30,7 +30,7 @@ class Store extends FormRequest
             'video_url' => 'required|url',
             'thumbnail' => 'required|image',
             'rating' => 'required|numeric|min:0|max:5',
-            'is_feaured' => 'nullable|boolean'
+            'is_feaured' => 'nullable|boolean',
         ];
     }
 }
